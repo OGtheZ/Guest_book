@@ -19,5 +19,5 @@ To use the application:
 - run composer install to install dependancies
 - setup Tailwind CSS https://tailwindcss.com/docs/guides/laravel using this tutorial.
 - add your site and secret keys from Google's recaptcha website https://developers.google.com/recaptcha/intro to the .env file (examples in .env.example in the bottom)
-- setup your Database connection (MySQL) and run **php artisan migrate** to create the database tables.
+- setup your Database connection (MySQL) in the .env file and run **php artisan migrate** to create the database tables.
 - to try the application out just type: **php artisan serv** in your terminal.
