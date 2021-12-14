@@ -7,6 +7,7 @@ use App\Services\StoreMessageService;
 use App\Services\UserBrowserInfoService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 use Illuminate\View\View;
 
 class MessageController extends Controller
@@ -46,6 +47,7 @@ class MessageController extends Controller
             $request->ip(),
             $browserInfo
         );
+        Session::flash('success', "You just added a message!");
         return redirect()->back();
     }
 }

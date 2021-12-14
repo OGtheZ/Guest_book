@@ -42,8 +42,14 @@
 
     <div class="border-t-2 border-solid border-gray-500">
 
+        @if(Session::has('success'))
+
+            <p class="text-green-600 ml-2">{{ Session::get('success') }}</p>
+
+        @endif
+
             @foreach ($errors->all() as $error)
-                <p style="color: red" class="text-red-500 ml-2">{{ $error }}</p>
+                <p class="text-red-600 ml-2">{{ $error }}</p>
             @endforeach
 
         <form action="/" method="post" class="ml-2">
@@ -63,7 +69,7 @@
                               class="border-solid border border-gray-400"></textarea><br>
                 </div>
                 <div class="w-1/6 mt-6">
-                    <button class="border-solid border-2 border-black bg-green-400 p-1 rounded" type="submit">Submit
+                    <button class="border-solid border-2 border-black bg-green-600 p-1 rounded" type="submit">Submit
                     </button>
                     <br>
                     <div class="mt-2">
