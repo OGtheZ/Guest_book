@@ -2,7 +2,7 @@ A simple Laravel guest book application.
 There is a form to add new messages and a table displaying the messages.  
 10 messages per page and they can be sorted by username and the time.  
 I added the jenssegers/agent package to acquire user browser information.  
-I added the biscolab/laravel-recaotcha package to use Google's recaptcha.  
+I added the biscolab/laravel-recaptcha package to use Google's recaptcha.  
 Another package added is kyslik/column-sortable to make columns sortable in the messages table.  
 The project is running on Laravel 8 and PHP 7.4.  
 The template engine used ir Blade and TailwindCSS for css.
